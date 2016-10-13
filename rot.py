@@ -88,7 +88,13 @@ while True:
 				rotNum = int(rotNum)
 				if rotNum >= 1 and rotNum < 26:
 					userStr = raw_input("Enter your string: ")
-					print rotCalc(userStr)
+					
+					# Prints final encoded/decoded string
+					
+					if encOrDec == 1:
+						print userStr, ("ROT-" + str(rotNum)), "encoded:", rotCalc(userStr)
+					elif encOrDec == 2:
+						print userStr, ("ROT-" + str(rotNum)), "decoded:", rotCalc(userStr)
 				else:
 					print "Goodbye!"
 					sys.exit()			
