@@ -1,7 +1,6 @@
 # ROT Encoder/Decoder now with input validation.
 # Code written by SnoozeSecurity (youtube.com/SnoozeSecurity)
 
-import math
 import sys
 
 # Sets alphabet characters for comparison.
