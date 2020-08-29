@@ -12,4 +12,4 @@ content = [x.strip() for x in content]
 
 for i in content:
      for ip in IPNetwork(i).iter_hosts():
-          print '%s' %ip
+          print (%s' %ip)
