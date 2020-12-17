@@ -5,7 +5,7 @@ import string
 alpha = string.ascii_lowercase
 
 plainText = input("Enter your plaintext to be encrypted: ")
-userKey = input("Enter your alphabetical key; exits on invalid character: ")
+userKey = input("Enter your alphabetical key; exits on invalid character: ").lower()
 cipherText = ''
 cycKey = cycle(userKey)
 
