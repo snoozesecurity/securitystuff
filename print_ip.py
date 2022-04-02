@@ -7,9 +7,9 @@
 from netaddr import * 
 
 with open('/path/to/ip_list.txt') as f:
-     content = f.readlines()
-content = [x.strip() for x in content]
+  content = f.readlines()
+  content = [x.strip() for x in content]
 
 for i in content:
-     for ip in IPNetwork(i).iter_hosts():
-          print '%s' %ip
+  for ip in IPNetwork(i).iter_hosts():
+    print '%s' %ip

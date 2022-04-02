@@ -25,17 +25,17 @@ release = '1995'
 
 
 for i in range(len(string.ascii_uppercase)):
-	pwd = "bev"
-	pwd += string.ascii_uppercase[i]
-	for j in range(len(numbers)):
-		pwd = "bev" + string.ascii_uppercase[i]
-		pwd += str(numbers[j])
-		for k in range(len(lowers)):
-			pwd = "bev" + string.ascii_uppercase[i] + str(numbers[j])
-			pwd += str(lowers[k])
-			for l in range(len(symbols)):
-				pwd = "bev" + string.ascii_uppercase[i] + str(numbers[j]) + str(lowers[k])
-				pwd += str(symbols[l]) + release
-				print pwd
-				
+  pwd = "bev"
+  pwd += string.ascii_uppercase[i]
+  for j in range(len(numbers)):
+    pwd = "bev" + string.ascii_uppercase[i]
+    pwd += str(numbers[j])
+    for k in range(len(lowers)):
+      pwd = "bev" + string.ascii_uppercase[i] + str(numbers[j])
+      pwd += str(lowers[k])
+      for l in range(len(symbols)):
+        pwd = "bev" + string.ascii_uppercase[i] + str(numbers[j]) + str(lowers[k])
+        pwd += str(symbols[l]) + release
+        print pwd
+        
 # Usage: python <thisfile>.py > output.txt
